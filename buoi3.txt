@@ -1,0 +1,13 @@
+cau 1 :
+cho so nguyen n > 1 viet chuong trin su dung ham thuc hien tim cac so nguyen to nho hon n liet ke cac so nay va tinh tong cua chung voi n =25000
+b) tim so nguyen to gan n nhat
+cau 2:
+cho so nguyen duong n =82300.viet chuong trinh co su dung ham thuc hien
+a) tinh so luong cac uoc so cua so nguyen duong n da cho.trong cac uoc so cua n tim ddc co bao nhieu so nguyen to,liet ke va tinh tong cua cac uoc so nay
+b)tim so luong cac so hoan hao giua 1 va n
+cau 3: cho he phuong trinh dong du, viet chuong trinh 
+x = 2 mod 3
+x = 4 mod 5
+x = 6 mod 7
+x = 11 mod 13
+x = 9 mod 11

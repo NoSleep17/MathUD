@@ -57,5 +57,6 @@ int main() {
             std::cout << V[i][j] << " ";
         std::cout << "\n";
     }
+    int a;
     return 0;
 }

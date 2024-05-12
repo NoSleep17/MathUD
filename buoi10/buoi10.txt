@@ -1,0 +1,6 @@
+cho 10 điểm trong không gian đề 1: 4 5 6 4 7 6 8 7 9 8 5 10 4 9 5 9 8 11 8 5
+đề 2 : 6 7 8 6 9 8 10 9 11 10 7 12 6 11 7 11 10 13 10 7 
+a) mô tả thuật toán xác định bao lồi và xác định bao lồi đấy, bằng tay 
+viết chương trình hàm tính bao lồi bằng ít nhất 2 pp, xác định bào lồi, tính diện tích
+viết chương trình sử dụng hàm tính khoảng cách ngắn nhất giữa các đỉnh bao lồi tìm đc bảo đảm độ phức tạp nlogn
+d)viết chương trình  tính khoảng cách ngắn nhất giữa các điểm nằm bên trong bao lồi nlogn 

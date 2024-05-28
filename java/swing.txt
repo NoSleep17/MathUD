@@ -1,0 +1,59 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class DongHoGUI extends JFrame {
+    public DongHoGUI() {
+        setTitle("Dong Ho");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+
+        // Tạo các thành phần
+        JPanel dongHoPanel = new JPanel(new BorderLayout());
+        JLabel dongHoLabel = new JLabel("Dong Ho");
+        JPanel clockPanel = new JPanel(new GridBagLayout());
+        JPanel controlPanel = new JPanel(new GridLayout(2, 2, 10, 10));
+
+        // Vẽ đồng hồ
+        clockPanel.setBackground(Color.WHITE);
+        clockPanel.setPreferredSize(new Dimension(200, 200));
+        dongHoPanel.add(clockPanel, BorderLayout.CENTER);
+
+        // Các nút điều khiển
+        JButton importDataButton = new JButton("Import data");
+        JButton importFileButton = new JButton("Import file");
+        JTextField keywordField = new JTextField("Keyword");
+        JButton deleteButton = new JButton("Delete");
+        JButton searchButton = new JButton("Search");
+        JButton showAllButton = new JButton("Show All");
+        controlPanel.add(importDataButton);
+        controlPanel.add(importFileButton);
+        controlPanel.add(keywordField);
+        controlPanel.add(deleteButton);
+        controlPanel.add(searchButton);
+        controlPanel.add(showAllButton);
+
+        // Kết quả tìm kiếm
+        JTextArea searchResultArea = new JTextArea(2, 20);
+        searchResultArea.setEditable(false);
+        searchResultArea.setText("Search result:\n1. Day di hoc buoi sang, 06h30\n2. Day di hoc buoi trua, 12h00");
+
+        // Thêm các thành phần vào giao diện
+        add(dongHoLabel, BorderLayout.NORTH);
+        add(dongHoPanel, BorderLayout.CENTER);
+        add(controlPanel, BorderLayout.EAST);
+        add(searchResultArea, BorderLayout.SOUTH);
+
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new DongHoGUI();
+            }
+        });
+    }
+}
